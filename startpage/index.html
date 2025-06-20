@@ -2,45 +2,111 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<title>Nimbusis Startpage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Nimbusis Browser - Startpage</title>
 <style>
-    body {
-        background: #001f3f;
-        color: #00ffff;
-        font-family: monospace, monospace;
-        text-align: center;
-        padding: 50px;
-    }
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #00fff7;
+    font-family: 'JetBrains Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 3.8rem;
+    margin-bottom: 0.1em;
+    text-shadow: 0 0 10px #00fff7cc;
+  }
+
+  p.subtitle {
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    color: #00fff7aa;
+  }
+
+  hr {
+    width: 60%;
+    border: none;
+    border-top: 1px solid #00fff799;
+    margin-bottom: 2rem;
+  }
+
+  ul.links {
+    list-style: none;
+    padding: 0;
+    width: 320px;
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+
+  ul.links li {
+    margin: 15px 0;
+  }
+
+  ul.links a {
+    display: block;
+    background: rgba(0, 255, 247, 0.1);
+    padding: 12px 18px;
+    border-radius: 8px;
+    color: #00fff7;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 8px #00fff7aa;
+  }
+
+  ul.links a:hover, ul.links a:focus {
+    background: #00fff7;
+    color: #003333;
+    box-shadow: 0 0 20px #00fff7ff;
+    outline: none;
+  }
+
+  /* Footer */
+  footer {
+    margin-top: auto;
+    color: #00fff744;
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 15px 0 5px;
+    user-select: none;
+  }
+
+  @media (max-width: 400px) {
     h1 {
-        font-size: 3em;
-        margin-bottom: 0.5em;
+      font-size: 2.5rem;
     }
-    a {
-        color: #00ffff;
-        text-decoration: none;
+    ul.links {
+      width: 90vw;
     }
-    a:hover {
-        text-decoration: underline;
-    }
-    ul {
-        list-style: none;
-        padding-left: 0;
-    }
-    ul li {
-        margin: 10px 0;
-    }
+  }
 </style>
 </head>
 <body>
-    <h1>Welcome to Nimbusis Browser</h1>
-    <p>Your hacker-style, clean & modern start page.</p>
-    <hr />
-    <h2>Quick Links</h2>
-    <ul>
-        <li><a href="https://nimbusis.de/startpage" target="_blank">Nimbusis Official</a></li>
-        <li><a href="https://news.ycombinator.com" target="_blank">Hacker News</a></li>
-        <li><a href="https://www.reddit.com/r/programming" target="_blank">Reddit Programming</a></li>
-        <li><a href="https://duckduckgo.com" target="_blank">DuckDuckGo</a></li>
-    </ul>
+  <h1>Nimbusis Browser</h1>
+  <p class="subtitle">Clean, fast & hacker-style startpage</p>
+  <hr />
+  <ul class="links" role="list">
+    <li><a href="https://nimbusis.de/startpage" target="_blank" rel="noopener">Nimbusis Official</a></li>
+    <li><a href="https://news.ycombinator.com" target="_blank" rel="noopener">Hacker News</a></li>
+    <li><a href="https://www.reddit.com/r/programming" target="_blank" rel="noopener">Reddit Programming</a></li>
+    <li><a href="https://duckduckgo.com" target="_blank" rel="noopener">DuckDuckGo</a></li>
+  </ul>
+  <footer>© 2025 Nimbusis Browser | Made with 💙</footer>
 </body>
 </html>
